@@ -1,0 +1,1 @@
+# webpack-babel-react-redux-jest-eslint-setup
