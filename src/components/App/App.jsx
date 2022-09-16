@@ -1,4 +1,3 @@
-import { hot } from 'react-hot-loader/root';
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -16,4 +15,4 @@ App.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default hot(App);
+export default App;

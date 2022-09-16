@@ -10,17 +10,17 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
+        use: ['babel-loader'],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        exclude: [/node_modules/],
+        exclude: /node_modules/,
         include: path.resolve(__dirname, 'src/static'),
         use: 'file-loader',
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        exclude: [/node_modules/],
+        exclude: /node_modules/,
         include: path.resolve(__dirname, 'src/fonts'),
         use: 'file-loader',
       },
@@ -28,9 +28,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['*', '.js', '.jsx'],
-    alias: {
-      'react-dom': '@hot-loader/react-dom',
-    },
   },
   plugins: [
     new HtmlWebpackPlugin({
