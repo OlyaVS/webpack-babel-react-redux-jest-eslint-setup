@@ -1,4 +1,4 @@
-# New react project minimum setup:
+# New react project minimum setup (upd 2022):
 * bundle - Webpack with common and environment specific configurations
 * transpile - Babel
 * lint - ESLint
